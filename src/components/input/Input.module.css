@@ -1,0 +1,37 @@
+.input_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.textfield {
+  width: 100%;
+  border: 1px solid var(--grey);
+}
+
+.textfield:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0;
+}
+
+.textfield.small {
+  padding: 0.2rem;
+}
+
+.textfield.large {
+  min-height: 2.5rem;
+  padding: 1rem;
+}
+
+.input_icon_right,
+.input_wrapper svg {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  color: var(--grey);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.textfield.large.has_right_addon {
+  padding-right: 1.7rem;
+}

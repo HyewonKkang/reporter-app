@@ -1,0 +1,21 @@
+button {
+  padding: 0;
+  overflow: visible;
+  background: inherit;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+
+.error_boundary_container {
+  width: 100%;
+  margin: 3rem 0;
+}

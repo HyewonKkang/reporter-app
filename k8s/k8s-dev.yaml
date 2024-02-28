@@ -1,0 +1,47 @@
+---
+# Namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: 2024-winter
+---
+# Ingress
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: helen-reporter-app
+  namespace: 2024-winter
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: 'false'
+spec:
+  tls:
+    - secretName: dev-daum-net
+  ingressClassName: helen-ingress
+  rules:
+    - host: helen-reporter-app.dev.daum.net
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: helen-reporter-app
+                port:
+                  number: 8080
+---
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: helen-reporter-app
+  name: helen-reporter-app
+  namespace: 2024-winter
+spec:
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    app: helen-reporter-app
+  type: ClusterIP

@@ -1,0 +1,11 @@
+.searchable_list_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (width <= 480px) {
+  .searchable_list_wrapper input {
+    width: 200px;
+  }
+}

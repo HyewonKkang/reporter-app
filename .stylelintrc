@@ -1,0 +1,15 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-rational-order"],
+  "rules": {
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": ["after-comment", "after-custom-property", "first-nested"]
+      }
+    ],
+    "color-function-notation": ["legacy", { "ignore": ["with-var-inside"] }],
+    "alpha-value-notation": ["number"],
+    "selector-class-pattern": null,
+    "no-descending-specificity": null
+  }
+}

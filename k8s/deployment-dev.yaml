@@ -1,0 +1,32 @@
+---
+# Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: helen-reporter-app
+  name: helen-reporter-app
+  namespace: 2024-winter
+spec:
+  selector:
+    matchLabels:
+      app: helen-reporter-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: helen-reporter-app
+    spec:
+      containers:
+        - name: helen-reporter-app
+          image: idock.daumkakao.io/2024-winter/helen-reporter-app:latest
+          imagePullPolicy: Always
+          resources:
+            requests:
+              cpu: 1000m
+              memory: 3000Mi
+            limits:
+              cpu: 2000m
+              memory: 3000Mi
+          ports:
+            - containerPort: 8080

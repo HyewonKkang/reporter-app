@@ -1,0 +1,31 @@
+.result_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  background: var(--white);
+  border-radius: 20px;
+}
+
+.result_wrapper.bordered {
+  border: 1px solid var(--grey);
+}
+
+.result_wrapper .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.result_wrapper .subtitle {
+  color: var(--darkgrey);
+  font-size: 1rem;
+}
+
+.result_wrapper .content {
+  margin-top: 30px;
+}

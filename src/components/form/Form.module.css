@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80%;
+}
+
+.field > label {
+  width: 200px;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+@media screen and (width <= 480px) {
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .field > label {
+    align-self: self-start;
+    margin-bottom: 10px;
+  }
+
+  .field > textarea {
+    width: 100%;
+  }
+
+  .field:has(.toggle) {
+    flex-direction: row;
+  }
+}

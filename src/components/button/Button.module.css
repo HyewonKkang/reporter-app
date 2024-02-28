@@ -1,0 +1,86 @@
+button.contained {
+  color: white;
+  background: var(--primary);
+  border-radius: 0.2rem;
+}
+
+.contained:hover:not(:disabled),
+.contained:focus-visible:not(:disabled) {
+  opacity: 0.8;
+}
+
+button.text {
+  color: var(--primary);
+  border-radius: 0.2rem;
+}
+
+.text:hover:not(:disabled),
+.text:focus-visible:not(:disabled) {
+  opacity: 0.7;
+}
+
+button.text.underline {
+  text-decoration: underline;
+}
+
+button.large {
+  padding: 0.8rem 1.5rem;
+  white-space: nowrap;
+}
+
+button.medium {
+  padding: 0.6rem 1rem;
+  white-space: nowrap;
+}
+
+button.small {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.contained:disabled {
+  background: var(--grey);
+  cursor: not-allowed;
+}
+
+button.outlined {
+  background: var(--white);
+  border: 1px solid var(--primary);
+  border-radius: 0.2rem;
+}
+
+.outlined:hover:not(:disabled),
+.outlined:focus-visible:not(:disabled) {
+  background: var(--lightgrey);
+}
+
+button.tag {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+  width: fit-content;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  background: var(--white);
+  border: 1.5px solid var(--grey);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button.tag:hover {
+  background: var(--lightgrey);
+}
+
+button.tag.clicked {
+  background: var(--grey);
+}
+
+button.tag:disabled {
+  cursor: not-allowed;
+}
+
+.back_button {
+  align-self: flex-start;
+  margin: 1rem 0;
+}

@@ -1,0 +1,27 @@
+.backdrop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(96, 96, 96, 0.7);
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  min-width: 200px;
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--dropdown);
+}
+
+@media screen and (width <= 480px) {
+  .container {
+    width: 100% !important;
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,38 @@
+@import url('./reset.css');
+@import url('./styles.css');
+@import url('~react-toastify/dist/ReactToastify.min.css');
+
+:root {
+  --secondary: rgb(3, 51, 161);
+  --primary: #212529;
+  --background: rgb(255, 255, 255);
+  --grey: #d7d7d7;
+  --black: #000;
+  --darkgrey: #666;
+  --lightgrey: #f6f6f6;
+  --white: #fff;
+  --dropdown: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body {
+  background: var(--background);
+}
+
+body * {
+  font-size: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 400px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+  outline: none;
+}

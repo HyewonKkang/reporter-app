@@ -1,0 +1,34 @@
+.chart_wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 1rem;
+  box-shadow: var(--dropdown);
+}
+
+.chart_title {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.dashboard {
+  margin: 3rem 0;
+}
+
+.dashboard_grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (width <= 480px) {
+  .dashboard_grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

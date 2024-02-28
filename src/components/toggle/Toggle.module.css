@@ -1,0 +1,56 @@
+.toggle {
+  --toggle-size: 60px;
+  --toggle-circle-size: 28px;
+
+  position: relative;
+  display: inline-block;
+  width: var(--toggle-size) !important;
+  height: calc(var(--toggle-size) / 2);
+}
+
+.toggle input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.toggle span {
+  position: absolute;
+  inset: 0;
+  background-color: var(--white);
+  border-radius: 34px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.toggle span::before {
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  width: var(--toggle-circle-size);
+  height: var(--toggle-circle-size);
+  background-color: white;
+  background-color: var(--primary);
+  border-radius: 50%;
+  transition: 0.4s;
+  content: '';
+}
+
+.toggle input:checked + span {
+  background-color: var(--primary);
+}
+
+.toggle input:checked + span::before {
+  background-color: var(--white);
+  transform: translateX(calc(var(--toggle-size) / 2));
+}
+
+.toggle input:disabled + span {
+  background-color: var(--white);
+  cursor: not-allowed;
+}
+
+.toggle input:disabled + span::before {
+  background-color: var(--grey);
+}

@@ -1,0 +1,13 @@
+.search_input_wrapper {
+  margin-top: 1rem;
+}
+
+.search_input_wrapper input {
+  width: 300px;
+}
+
+.search_input_wrapper button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}

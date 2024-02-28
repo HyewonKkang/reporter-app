@@ -1,0 +1,97 @@
+.article {
+  max-width: 750px;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.article * {
+  text-align: left;
+}
+
+.head {
+  width: 100%;
+}
+
+.head h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+}
+
+.head h4 {
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+}
+
+.head .info_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.head .head_info {
+  display: flex;
+  gap: 1rem;
+  color: var(--darkgrey);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.head .head_info span {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.head .head_info span:hover {
+  opacity: 0.7;
+}
+
+.head .variety_wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.head .keywords {
+  display: flex;
+  gap: 0.2rem;
+  width: 100%;
+  margin: 1.2rem 0;
+  color: var(--darkgrey);
+}
+
+.body {
+  width: 100%;
+}
+
+.body .thumbnail {
+  position: relative;
+  display: block;
+  margin: 0;
+}
+
+.body .thumbnail img {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+.body .body_text p {
+  margin: 24px 0;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.body .body_text p:last-child {
+  margin-top: 40px;
+}

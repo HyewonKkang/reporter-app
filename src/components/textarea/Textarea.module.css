@@ -1,0 +1,28 @@
+.textarea {
+  padding: 1rem;
+  overflow: hidden;
+  overflow-y: hidden;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 1rem;
+  background: var(--white);
+  border: 1px solid var(--grey);
+  resize: none;
+}
+
+.textarea::placeholder {
+  color: var(--darkgrey);
+}
+
+.textarea:disabled {
+  background: var(--lightgrey);
+  cursor: not-allowed;
+}
+
+.textarea:hover:not(:disabled),
+.textarea:focus:not(:disabled),
+.textarea:active:not(:disabled) {
+  border: 1px solid var(--secondary);
+  outline: none !important;
+  box-shadow: 0;
+}
